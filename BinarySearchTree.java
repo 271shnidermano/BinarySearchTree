@@ -48,30 +48,7 @@ public class BinarySearchTree<T extends Comparable<T>> implements BSTInterface<T
         }
         else
         {
-            boolean go = true;
-            /*while(go)
-            {
-               if(current.getInfo().compareTo(element)<0)
-               {
-                if(current.getRight()==null)
-                {
-                    go = false;
-                    current.setRight(new BinaryNode<T>(element));
-                }
-                current = current.getRight();
-               }
-               else if(current.getInfo().compareTo(element)>0)
-               {
-                if(current.getLeft()==null)
-                {
-                    go = false;
-                    current.setLeft(new BinaryNode<T>(element));
-                }
-                current = current.getLeft();
-               }
-               
-            }*/
-           if(contains(element))
+           if(!contains(element))
            {
             add(root, element);
            }
